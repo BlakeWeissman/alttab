@@ -120,7 +120,6 @@ static void framesRedraw()
         if (f == selNdx)
             continue;           // skip
         drawFr(g.gcReverse, f); // thick bg
-        drawFr(g.gcDirect, f);  // thin frame
     }
 // _after_ unselected draw selected, because they may overlap
     drawFr(g.gcFrame, selNdx);
